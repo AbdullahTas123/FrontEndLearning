@@ -1,0 +1,53 @@
+h1 {
+    color: red;
+}
+
+p, li {
+    color: green;
+}
+
+li {
+    list-style-type: circle;
+}
+
+.special {
+    color:orange;
+    font-weight: bold;
+}
+
+/*     li'de bulunan <em>'leri değiştirme        */
+li em {
+    color: rebeccapurple;
+}
+
+/*     h1'den sonraki p        */
+h1 + p {
+    font-size: 200%;
+}
+
+li span{
+    color:rgb(31, 12, 201);
+    font-size: large;
+}
+
+/* ziyaret edilmediyse pembe*/
+a:link {
+    color:pink;
+}
+
+/* ziyaret edildiyse yeşil */  
+a:visited {
+    color:green;
+}
+
+/* mouse ile üzerine geldiğinde alt çizgi göstermeme */
+a:hover {
+    text-decoration: none;
+}
+
+/* body'nin içindeki h1'den sonraki p'nin içindeki .special */
+body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+  }
