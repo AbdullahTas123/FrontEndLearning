@@ -11,13 +11,31 @@
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
+    <style>
+      details summary {
+        padding: 4px;
+        width: 200px;
+        background-color: #b8be64;
+        border: none;
+        box-shadow: 1px 1px 2px #bbbbbb;
+        cursor: pointer;
+        font-size: large;
+      }
+      
+      details li {
+        background-color: #b8be64;
+        padding: 4px;
+        margin: 0;
+        box-shadow: 1px 1px 2px #bbbbbb;
+      }
+      </style>
   </head>
 
   <body>
     <!-- Here is our main header that is used across all the pages of our website -->
 
     <header>
-      <h1>HTML TRIALS</h1>
+      <h1>HTML CSS JS</h1>
     </header>
 
     <nav>
@@ -42,21 +60,36 @@
       
       <aside>
         <h2>Topics</h2>
+        <details>
+          <summary>HTML</summary>
+          <ul>
+            <li><a href="html-basic-tags.html">Html Basic Tags</a></li>
+            <li><a href="links-example.html">Links</a></li>
+            <li><a href="video-music.html">Video and Music Example</a></li>
+            <li><a href="video-subtitle.html">Subtitle Example</a></li>
+            <li><a href="responsive-images.html">Responsive Images</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="school-time-table.html">School TimeTable</a></li>
+            <li><a href="table-structure.html">Table Strcuture</a></li>
+            <li><a href="table-scope.html">Table Scope</a></li>
+            <li><a href="table-id-header.html">Table id-header</a></li>
+            <li><a href="table-project.html">Table Project</a></li>
+          </ul>
+        </details>
 
-        <ul>
-          <li><a href="html-basic-tags.html">Html Basic Tags</a></li>
-          <li><a href="links-example.html">Links</a></li>
-          <li><a href="video-music.html">Video and Music Example</a></li>
-          <li><a href="video-subtitle.html">Subtitle Example</a></li>
-          <li><a href="responsive-images.html">Responsive Images</a></li>
-          <li><a href="tables.html">Tables</a></li>
-          <li><a href="school-time-table.html">School TimeTable</a></li>
-          <li><a href="table-structure.html">Table Strcuture</a></li>
-          <li><a href="table-scope.html">Table Scope</a></li>
-          <li><a href="table-id-header.html">Table id-header</a></li>
-          <li><a href="table-project.html">Table Project</a></li>
+        <details>
+          <summary>CSS</summary>
+          <ul>
+            <li><a href="html-basic-tags.html">Html Basic Tags</a></li>
+          </ul>
+        </details>
 
-        </ul>
+        <details>
+          <summary>JavaScript</summary>
+          <ul>
+            <li><a href="html-basic-tags.html">Html Basic Tags</a></li>
+          </ul>
+        </details>
       </aside>
 
       <!-- It contains an article -->
