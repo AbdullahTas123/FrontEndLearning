@@ -1,0 +1,44 @@
+html {
+     font-size: 16px;
+}
+/* parent element font size ' a bağlı */
+.ems li {
+     font-size: 1.3em;
+}
+/* root element font size ' a bağlı */
+.rems li {
+     font-size: 1.3rem;
+}
+
+.box {
+     border: 0.3rem solid black;
+     background-image: url(../../web-examples-html/images/firefox-icon.png);
+     opacity: 0.3;
+     background-size:500px 300px;
+     width: 500px;
+     height: 300px;
+     text-align:center;
+}
+
+.box::after {
+     content: "I am a box with opacity"
+}
+
+.container {
+     border: .2em solid purple;
+     width: 400px;
+
+   }
+   
+.container-box {
+     width: calc(20% + 100px);
+     background-color: lightgray;
+}
+
+/* vh=görüntü alanı height , vw= görüntü alanı width*/
+.box-1 {
+     border: 5px solid darkblue;
+     width: 20vw;
+     height: 20vh;
+     font-size: 10vh;
+   }

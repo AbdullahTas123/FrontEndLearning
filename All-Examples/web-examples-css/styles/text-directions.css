@@ -1,0 +1,65 @@
+.wrapper-1 {
+     display: flex;
+}
+
+h1 {
+     writing-mode: vertical-rl;
+     background-color: black;
+     color: white;
+}
+
+.horizontal {
+     writing-mode: horizontal-tb;
+     border: 1px solid black;
+}
+   
+.vertical {
+     writing-mode: vertical-rl;
+     border: 1px solid black;
+}
+.box {
+     inline-size: 150px;
+}
+
+
+
+/*------------- wrapper 2 -------------*/
+.wrapper-2{
+     display: flex;
+     gap: 20px;
+}
+
+.box1 {
+     /*block-size: 120px */
+     inline-size: 100px;
+     writing-mode: horizontal-tb;
+}
+
+.physical {
+     margin-top: 20px;
+     padding-right: 2em;
+     padding-top: 2px;
+
+     border-top: 5px solid pink;
+     border-right: 10px dotted rebeccapurple;
+     border-bottom: 1em double orange;
+     border-left: 1px solid black;
+}
+
+.logical {
+     margin-block-start: 20px;
+     padding-inline-end: 2em;
+     padding-block-start: 2px;
+
+     border-block-start: 5px solid pink;
+     border-inline-end: 10px dotted rebeccapurple;
+     border-block-end: 1em double orange;
+     border-inline-start: 1px solid black;
+}
+   
+
+   
+h2 {
+     border-bottom: 5px solid black;
+}
+       

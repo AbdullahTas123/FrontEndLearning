@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<style>
+          /* spacing */
+
+     table {
+          table-layout:fixed;
+          width: 100%;
+
+     }
+     
+     thead th:nth-child(1) {
+          width: 10%;
+     }
+     
+     thead th:nth-child(2) {
+          width: 10%;
+     }
+     
+     thead th:nth-child(3) {
+          width: 10%;
+     }
+     
+     thead th:nth-child(4) {
+          width: 35%;
+     }
+
+     
+     th, td {
+          padding: 10px 0 10px 10px;
+     }
+
+     /* typography */
+
+     html {
+          font-family: 'helvetica neue', helvetica, arial, sans-serif;
+     }
+     
+     thead th, tfoot th {
+          font-family: 'Rock Salt', cursive;
+     }
+     thead th:first-child{
+          text-align: left;
+     }
+     thead th:nth-child(3){
+          text-align: right;
+     }
+     thead th:last-child{
+          text-align: left;
+     }
+     
+     th {
+          letter-spacing: 0;
+     }
+     
+     td {
+          letter-spacing: 1px;
+     }
+     
+     tbody td {
+          text-align: center;
+     }
+     
+     tbody tr th {
+          text-align: left;
+     }
+
+     tbody tr td:last-child{
+          text-align: left;
+     }
+     tbody tr td:nth-child(3){
+          text-align: right;
+
+     }
+
+     /* graphics and colors */
+
+     caption{ 
+          border-bottom: 1px solid rgb(185, 182, 182);
+     }
+     tfoot tr{
+          border-top: 1px solid rgb(185, 182, 182);
+          border-bottom: 1px solid rgb(185, 182, 182);
+     }
+     tbody tr:nth-child(odd) {
+          background-color: rgb(229, 226, 226);
+     }
+   
+     tbody tr:nth-child(even) {
+          background-color: white;
+     }
+   
+</style>
+<body>
+     <table>
+          <caption>A summary of the UK's most famous punk bands</caption>
+          <thead>
+            <tr>
+              <th scope="col">Band</th>
+              <th scope="col">Year formed</th>
+              <th scope="col">No. of Albums</th>
+              <th scope="col">Most famous song</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Buzzcocks</th>
+              <td>1976</td>
+              <td>9</td>
+              <td>Ever fallen in love (with someone you shouldn't've)</td>
+            </tr>
+            <tr>
+              <th scope="row">The Clash</th>
+              <td>1976</td>
+              <td>6</td>
+              <td>London Calling</td>
+            </tr>
+            <tr>
+              <th scope="row">The Damned</th>
+              <td>1976</td>
+              <td>10</td>
+              <td>Smash it up</td>
+            </tr>
+            <tr>
+              <th scope="row">Sex Pistols</th>
+              <td>1975</td>
+              <td>1</td>
+              <td>Anarchy in the UK</td>
+            </tr>
+            <tr>
+              <th scope="row">Sham 69</th>
+              <td>1976</td>
+              <td>13</td>
+              <td>If the kids are united</td>
+            </tr>
+            <tr>
+              <th scope="row">Siouxsie and the Banshees</th>
+              <td>1976</td>
+              <td>11</td>
+              <td>Hong Kong Garden</td>
+            </tr>
+            <tr>
+              <th scope="row">Stiff Little Fingers</th>
+              <td>1977</td>
+              <td>10</td>
+              <td>Suspect Device</td>
+            </tr>
+            <tr>
+              <th scope="row">The Stranglers</th>
+              <td>1974</td>
+              <td>17</td>
+              <td>No More Heroes</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="2">Total albums</th>
+              <td colspan="2">77</td>
+            </tr>
+          </tfoot>
+     </table>
+            
+</body>
+</html>

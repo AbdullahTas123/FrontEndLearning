@@ -1,0 +1,148 @@
+/* General setup */
+
+* {
+     box-sizing: border-box;
+}
+   
+body {
+     margin: 0 auto;
+     min-width: 1000px;
+     max-width: 1400px;
+}
+   
+/* Layout */
+   
+section {
+     float: left;
+     width: 50%;
+}
+   
+aside {
+     float: left;
+     width: 30%;
+}
+   
+nav {
+     float: left;
+     width: 20%;
+}
+   
+footer {
+     clear: both;
+}
+   
+header, section, aside, nav, footer {
+     padding: 20px;
+}
+   
+/* header and footer */
+   
+header, footer {
+     border-top: 5px solid #a66;
+     border-bottom: 5px solid #a66;
+}
+   
+/* WRITE YOUR CODE BELOW HERE */
+
+.external-link{
+     background-image: url(https://mdn.github.io/learning-area/css/styling-text/typesetting-a-homepage-start/external-link-52.png);
+     background-repeat: no-repeat;
+     background-size: 16px 16px;
+     padding-right: 14px;
+}
+
+html {
+     font-size: 10px;
+}
+
+body {
+     font-size: 1.6rem;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     word-spacing: 3px;
+     letter-spacing: 0.8px;
+     line-height: 1.6;
+}
+h1,h2 {
+     letter-spacing: 1.8px;
+}
+
+h1 + p, h2 + p {
+     /* satır başı girinti*/
+     text-indent: 25px;
+}
+
+h1 {
+     font-size: 4rem;
+     text-align: center;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+     font-size: 2.5rem;
+}
+
+p {
+     font-size: 1.7rem;
+
+}
+
+/* LINKS*/
+
+section p a:link,
+aside ul li a:link  {
+     color:rgb(52, 52, 214);
+}
+
+section p a:hover,
+aside ul li a:hover {
+     text-decoration: none;
+
+}
+
+section p a:visited,
+aside ul li a:visited {
+     color: brown;
+}
+
+section p a:focus,
+aside ul li a:focus {
+     text-decoration: none;
+     background-color: rgba(128, 48, 48);
+     color:white
+}
+
+aside > ul > li {
+     line-height: 1.6;
+     list-style-type:square;
+}
+
+.nav__list{
+     display: block;
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+
+.nav__item {
+
+
+     text-align: center;
+     padding: 0.7rem 0;
+     margin: 2rem 0;
+}
+
+.nav__link {
+     display: block;
+     text-decoration: none;
+     font-size: 2.2rem;
+     padding: 1rem 0;
+     width: 100%;
+
+     border: 0.2rem solid rgb(204, 86, 40);
+
+}
+
+.nav__link:hover {
+     background-color: rgb(204, 86, 40);
+     color: white;
+}

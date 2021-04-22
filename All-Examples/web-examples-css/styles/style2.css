@@ -1,0 +1,159 @@
+
+/* class olan li'ler*/
+li[class] {
+     font-size: 200%;
+}
+ 
+ /* class'ı d olan li'ler*/
+li[class="d"] {
+     background-color: yellow;
+}
+ 
+ /* d class'ı yer alan li'ler örn= class="d" class="e d" ikisinede etki edecek */
+li[class~="d"] {
+     color: red;
+}
+
+
+
+
+/* class ismi a ile başlayanlar  örn= class="a"  class="ab"*/
+li[class^="a"] {
+     font-size: 200%;
+}
+ /* class ismi a ile bitenler*/
+li[class$="a"] {
+     background-color: yellow;
+}
+ /* içinde a geçen tüm classlı li'ler*/
+li[class*="a"] {
+     color: red;
+}
+
+/* küçük büyük harf duyarsız , ilk harf a yada A ikiside kabul i koyarsak*/
+li[class^="a" i] {
+    color: red;
+}
+
+
+
+/* notebox class'ı*/
+.notebox {
+    border: 4px solid #666;
+    padding: .5em;
+}
+  
+/* class="notebox warning"  ya da class="warning notebox"*/
+.notebox.warning {
+    border-color: orange;
+    font-weight: bold;
+}
+
+/* class="notebox danger"  ya da class="danger notebox"*/
+.notebox.danger {
+    border-color: red;
+    font-weight: bold;
+}
+
+/* id="one" */
+#one {
+    background-color: yellow;
+}
+
+/* id="heading"    <h1 id="heading">...</h1> */
+h1#heading {
+    color: rebeccapurple;
+}
+
+/* article'ın içindeki p'nin first child'ı yani ilk p       pseudo-class*/
+article p:first-child {
+    font-size: 120%;
+    font-weight: bold;
+    color:red;
+}   
+
+/* ziyaret edilmişse        User-action pseudo class */
+a:link,
+a:visited {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+/*mouse ile üzerine geldiğinde olacak şeyler*/
+a:hover {
+    color:hotpink;
+}  
+    
+/* .box class'ının içindeki metinden önce bunu yazdır         ::before */
+.box1::before {
+    content: "This should show before the other content."
+}   
+
+/* .box class'ının içindeki metinden sonra bunu yazdır        ::after*/
+.box2::after {
+    content: " ➥"
+}   
+
+/* .box class'ının içindeki metinden önce bunu yazdır şekil*/
+.box3::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border: 1px solid black;
+}
+    
+/* box4 ün içindeki p         Descendant combinator */
+.box4 p {
+    color: red;
+} 
+
+/* ol üst sınır olacak li ler      Child combinator */
+ol > li {
+    border-top: 5px solid red;
+}  
+
+/* h3 ten sonra gelen tüm p ler     General sibling combinator*/
+h3 ~ p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+}
+
+/* çift lerde böyle yap , tr = table row , çift satırlarda*/
+tr:nth-child(even) td {
+    background-color: #333;
+    color:white;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+
+/*border özellikleri*/
+.container {
+    border-top: 5px dotted green;
+    border-right: 1px solid black;
+    border-bottom: 20px double rgb(23,45,145);
+  }
+  
+.box {
+    border: 1px solid #333333;
+    border-top-style: dotted;
+    border-right-width: 20px;
+    border-bottom-color: hotpink;
+}

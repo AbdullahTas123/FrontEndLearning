@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          .menu {
+               background: #0B2027;
+          }
+
+          .menu__trigger {
+               background: #16414f;
+               float: left;
+               padding: 1.3rem 0;
+               width: 10%;
+               text-align: center;
+               color: white;
+               font-size: 1.5rem;
+               -webkit-transition: .3s;
+                       transition: .3s;
+          }
+          @media (min-width: 30em) and (max-width: 40em) {
+               .menu__trigger {
+                    width: 15%;
+               }
+          }
+          @media (max-width: 30em) {
+               .menu__trigger {
+                    width: 15%;
+               }
+          }
+
+          .menu__trigger--active {
+               background: salmon;
+          }
+
+          .menu__row {
+               width: 90%;
+               font-size: 0;
+          }
+
+          .menu__list {
+               display: inline-block;
+               vertical-align: bottom;
+               font-size: 1.2rem;
+          }
+
+          .menu__link {
+               display: block;
+               text-decoration: none;
+               padding: 1.5rem;
+               color: white;
+               font-weight: 500;
+               -webkit-transition: .3s;
+                         transition: .3s;
+          }
+          @media (max-width: 30em) {
+               .menu__link {
+                    padding: 1.5rem 0.6rem;
+               }
+          }
+          .menu__link:hover {
+               background: #16414f;
+          }
+
+          .menu__dropdown {
+               padding: 1.6rem 0;
+               background: salmon;
+               display: none;
+          }
+
+          .menu__col {
+               width: 33.333%;
+               float: left;
+               padding: 2.5rem 1.5rem;
+          }
+          @media (min-width: 40em) and (max-width: 50em) {
+               .menu__col {
+                    width: 100%;
+               }
+          }
+          @media (min-width: 30em) and (max-width: 40em) {
+               .menu__col {
+                    width: 100%;
+               }
+          }
+          @media (max-width: 30em) {
+               .menu__col {
+                    width: 100%;
+               }
+          }
+
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+
+          body {
+               font-family: "Raleway";
+          }
+
+          .cf:after {
+               content: "";
+               display: table;
+               clear: both;
+          }
+
+          h2 {
+               color: white;
+               font-size: 1.7rem;
+               font-weight: 500;
+               line-height: 1.4;
+               margin-bottom: 2vh;
+          }
+
+          p {
+               line-height: 1.5;
+               color: #fafafa;
+               font-weight: 500;
+          }
+     </style>
+
+</head>
+<body>
+     <div class="menu cf">
+          <a href="#" class="menu__trigger js-trigger">
+            <i class="ion-navicon-round">1</i>
+          </a>
+          
+          <ul class="menu__row">
+            <li class="menu__list">
+              <a href="#" class="menu__link">About</a>
+            </li>
+            
+            <li class="menu__list">
+              <a href="#" class="menu__link">Blog</a>
+            </li>
+            
+            <li class="menu__list">
+              <a href="#" class="menu__link">Contact</a>
+            </li>
+          </ul>
+          
+          <div class="menu__dropdown cf js-menu">
+            <div class="menu__col">
+              <h2>First Random Title</h2>
+              <p>Lorem ipsum dolor sit amet, nam in omnesque oporteat instructior, ut mea euismod maiorum omnesque. In eum mutat iriure, vel id aeque libris impedit, dicat liber duo ne. Equidem torquatos ex vix, et quo vocent mediocritatem, usu ex ubique electram conclusionemque. Mel id saepe veniam rationibus, audiam adipiscing ei ius. Quis ferri reprehendunt ex vel, ad aliquip aperiam recteque vim, ei debitis appetere signiferumque pri.</p>
+            </div>
+            
+            <div class="menu__col">
+              <h2>Second Random Title</h2>
+              <p><p>Lorem ipsum dolor sit amet, nam in omnesque oporteat instructior, ut mea euismod maiorum omnesque. In eum mutat iriure, vel id aeque libris impedit, dicat liber duo ne. Equidem torquatos ex vix, et quo vocent mediocritatem, usu ex ubique electram conclusionemque. Mel id saepe veniam rationibus, audiam adipiscing ei ius. Quis ferri reprehendunt ex vel, ad aliquip aperiam recteque vim, ei debitis appetere signiferumque pri.</p></p>
+            </div>
+            
+            <div class="menu__col">
+              <h2>The third and last random title</h2>
+              <p><p>Lorem ipsum dolor sit amet, nam in omnesque oporteat instructior, ut mea euismod maiorum omnesque. In eum mutat iriure, vel id aeque libris impedit, dicat liber duo ne. Equidem torquatos ex vix, et quo vocent mediocritatem, usu ex ubique electram conclusionemque. Mel id saepe veniam rationibus, audiam adipiscing ei ius. Quis ferri reprehendunt ex vel, ad aliquip aperiam recteque vim, ei debitis appetere signiferumque pri.</p></p>
+            </div>
+          </div>
+        </div>
+
+        
+</body>
+<script>
+     $('.js-trigger').on('click', function() {
+          $(this).toggleClass('menu__trigger--active');
+          $('.js-menu').slideToggle('fast');
+     });
+</script>
+</html>

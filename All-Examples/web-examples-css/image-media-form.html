@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="styles/image-media-form.css">
+</head>
+<body>
+     <div class="wrapper">
+          <div class="box"><img class="firefox" src="../web-examples-html/images/firefox-icon.png" alt="firefox"></div>
+          <br>
+          <div class="box"><img class="profile" src="../web-examples-html/images/profile-photo.jpg" alt="profile"></div>
+     </div>
+
+     <br>
+     <br>
+
+     <div class="wrapper">
+          <div class="box-1"><img class="panda-cover" src="../web-examples-html/original-images/red-panda.jpg" alt="panda"></div>
+          <br>
+          <div class="box-1"><img class="panda-contain" src="../web-examples-html/original-images/red-panda.jpg" alt="panda"></div>
+          <div class="box-1"><img class="panda-fill" src="../web-examples-html/original-images/red-panda.jpg" alt="panda"></div>
+     </div>
+
+     <br>
+     <br>
+     <br>
+
+     <div class="wrapper-1">
+          <img class="grid-profile" src="../web-examples-html/images/profile-photo.jpg" alt="profile">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+     </div>
+
+     <br>
+     <br>
+     <hr>
+     <hr>
+     <br>
+     <br>
+     <!-- FORM MENU -->
+     <form>
+          <div>
+               <label for="name">Name</label>
+               <input type="text" id="name">
+          </div>
+
+          <div>
+               <label for="email">Email</label>
+               <input type="email" id="email">
+          </div>
+
+          <div class="buttons"><input type="submit" value="Submit"></div>
+     </form>
+
+     <br>
+     <br>
+     <hr>
+     <hr>
+     <br>
+     <br>
+
+     <!-- DROPDOWN MENU -->
+     <!-- The second value will be selected initially -->
+     <select name="choice">
+          <option value="first">First Value</option>
+          <option value="second" selected>Second Value</option>
+          <option value="third">Third Value</option>
+     </select>
+
+     <br>
+     <br>
+     <hr>
+     <hr>
+     <br>
+     <br>
+
+     <!-- select with multiple features -->
+     <label>Please choose one or more pets:
+          <select name="pets" multiple size="4">
+            <optgroup label="4-legged pets">
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="hamster" disabled>Hamster</option>
+            </optgroup>
+            <optgroup label="Flying pets">
+              <option value="parrot">Parrot</option>
+              <option value="macaw">Macaw</option>
+              <option value="albatross">Albatross</option>
+            </optgroup>
+          </select>
+     </label>
+
+     <br>
+     <br>
+     <hr>
+     <hr>
+     <br>
+     <br>
+
+
+     <!-- <textarea> -->
+     <label for="story">Tell us your story:</label>
+
+     <textarea id="story" name="story"
+               rows="5" cols="33"> It was a dark and stormy night...
+     </textarea>
+
+
+</body>
+</html>

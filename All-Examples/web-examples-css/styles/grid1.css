@@ -1,0 +1,326 @@
+/*--------------------------------------------------------------------------------- GRID-1 -------------------------------------------------------------*/
+
+/*------------------------------------------ CONTAINER-1 --------------------------------------------------*/
+.container-1{
+     width: 900px;
+     height: 400px;
+     margin: 50px auto;
+     background-color: lightgray;
+     
+     display: grid;
+     /*grid-template-columns: 150px 150px 150px;  3 tane 150px genişliğinde*/
+     grid-template-columns: repeat(3, 150px);
+
+     /*grid-template-rows: 150px, 150px;    2 tane 150px yüksekliğinde*/
+     grid-template-rows: repeat(2, 150px);
+
+     /* grid-column-gap: 25px;
+        grid-row-gap: 25px;        satırlar ve sütunlar arası boşluk  */
+     grid-gap:25px;
+
+}
+.item{
+     text-align: center;
+     font-size: 1.3rem;
+}
+
+.item-1{
+     background-color: #581B45;
+
+     grid-column-start: 3;
+     grid-column-end: 4;
+     /* tek satırda column*/
+     grid-column: 3/4;
+     
+     grid-row-start: 2;
+     grid-row-end: 3;
+     /* tek satırda row*/
+     grid-row: 2/3;
+
+     /* tek satırda    grid-area: row-start / column-start / row-end / column-end     */
+     grid-area: 2/ 3 / 3 / 4;
+}
+.item-2{
+     background-color: #900C3F;
+}
+.item-3{
+     background-color: #C70039;
+}
+.item-4{
+     background-color: #FF5733;
+}
+.item-5{
+     background-color: #FFC30F;
+}
+.item-6{
+     background-color: #FFEEAD;
+}
+
+
+/*------------------------------------------ CONTAINER-2 --------------------------------------------------*/
+.container-2{
+     width: 900px;
+     height: 400px;
+     margin: 50px auto;
+     background-color: lightgray;
+     
+     display: grid;
+
+     grid-template-columns: 1fr 2fr 3fr;
+     /* grid-template-columns: 1fr 2fr 50%; */
+     
+     grid-template-rows: repeat(2, 150px);
+
+}
+.itemm-1{
+     background-color: #581B45;
+}
+.itemm-2{
+     background-color: #900C3F;
+}
+.itemm-3{
+     background-color: #C70039;
+}
+.itemm-4{
+     background-color: #FF5733;
+}
+.itemm-5{
+     background-color: #FFC30F;
+}
+.itemm-6{
+     background-color: #FFEEAD;
+}
+
+
+/*------------------------------------------ CONTAINER-3 --------------------------------------------------*/
+.container-3{
+     width: 900px;
+     height: 400px;
+     margin: 50px auto;
+     background-color: lightgray;
+     
+     display: grid;
+
+     grid-template-columns: 1fr 2fr 3fr;
+     /* grid-template-columns: 1fr 2fr 50%; */
+     
+     grid-template-rows: repeat(2, 150px);
+
+}
+
+.itemmm-1{
+     background-color: #581B45;
+
+     grid-column: 3/4;
+     grid-row: 2/3;
+
+
+     /*
+     grid-column: 1 / -1;
+     grid-column: span 3 ;
+     grid-column: 1 / span 3
+                              3 üde aynı şeyi yapıyor, uzatıyor.
+     */
+}
+.itemmm-2{
+     background-color: #900C3F;
+
+     /* grid-column: 1/4;
+        grid-column: 1/ -1; */
+     grid-column: span 3;
+}
+.itemmm-3{
+     background-color: #C70039;
+
+     /* grid-row: 2/4; */
+     grid-row: span 2;
+}
+.itemmm-4{
+     background-color: #FF5733;
+}
+.itemmm-5{
+     background-color: #FFC30F;
+}
+.itemmm-6{
+     background-color: #FFEEAD;
+}
+
+/*------------------------------------------ CONTAINER-4 --------------------------------------------------*/
+.container-4{
+     width: 800px;
+     margin: 25px auto;
+     background-color: lightgray;
+
+     
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: 170px 150px 130px;
+     grid-template-areas: "header header header"
+                          "aside main main"
+                          "aside itemmmm-1 itemmmm-2";
+     grid-gap: 25px;
+}
+   
+.container-4 > *{
+     background-color: #f77b55;
+}
+   
+.header{
+     grid-area: header;
+}
+.aside{
+     grid-area: aside;
+}
+.main{
+     grid-area: main;
+}
+.itemmmm-1{
+     grid-area: itemmmm-1;
+}
+.itemmmm-2{
+     grid-area: itemmmm-2;
+}
+
+/*------------------------------------------ CONTAINER-5 --------------------------------------------------*/
+.container-5{
+     width: 800px;
+     background-color: lightgray;
+     margin: 25px auto;
+     display: grid;
+     grid-template-columns: min-content 1fr max-content;
+     grid-template-rows: repeat(2, minmax(50px, min-content));
+     grid-gap: 25px;
+
+}
+.itemmmmm-1{
+     background-color: #581B45;
+}
+.itemmmmm-2{
+     background-color: #900C3F;
+}
+.itemmmmm-3{
+     background-color: #C70039;
+}
+.itemmmmm-4{
+     background-color: #FF5733;
+}
+.itemmmmm-5{
+     background-color: #FFC30F;
+}
+.itemmmmm-6{
+     background-color: #FFEEAD;
+}
+
+/*------------------------------------------ CONTAINER-6 --------------------------------------------------*/
+.container-6{
+     width: 80%;
+     margin: 50px auto;
+     color: #fff;
+     font-size: 24px;
+     text-align: center;
+     text-shadow: 1px 1px 1px #000;
+     background-color: lightgray;
+
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /*auto-fill de boşluklar oluyor , görünmez ekstra sütunla dolduruyor , auto-fit tam dolduruyor*/
+     grid-template-rows: minmax(150px, min-content);
+
+
+}
+.itemmmmmm-1{
+     background-color: #581B45;
+}
+.itemmmmmm-2{
+     background-color: #900C3F;
+}
+.itemmmmmm-3{
+     background-color: #C70039;
+}
+.itemmmmmm-4{
+     background-color: #FF5733;
+}
+.itemmmmmm-5{
+     background-color: #FFC30F;
+}
+.itemmmmmm-6{
+     background-color: #FFEEAD;
+}
+
+/*------------------------------------------ CONTAINER-7 --------------------------------------------------*/
+.container-7 {
+
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(2, 150px);
+     grid-gap: 25px;
+     
+     /*2 ye 2 oluşturduk ama 6 tane item var , kalan 2 sini columna yerleştiriyor yukarıdan aşşağıya , 200px genişliğinde*/
+     grid-auto-flow: column;
+     grid-auto-columns: 200px;
+
+     /*Grid container'ın içindeki itemleri hizalamak için */
+     align-items: start;        /* end , center   row(yatay) da hizalama yapar*/ 
+     /*justify-items: start;     end , center   column(dikey)de hizalama yapar*/
+     /*place-items: start end;     center         align-items - justify-items  beraber kullanır */
+
+}
+.itemmmmmmm-1{
+
+     /* Sadece tek bir itema özel hizalama yapmak istersek */
+     align-self: end;     /*    end , center             row(yatay) da hizalama yapar*/ 
+     /*justify-self: start;     end , center             column(dikey)de hizalama yapar*/
+     /*place-self: start end;   center                   align-self - justify-self  beraber kullanır */
+
+     background-color: #581B45;
+}
+.itemmmmmmm-2{
+     background-color: #900C3F;
+}
+.itemmmmmmm-3{
+     background-color: #C70039;
+}
+.itemmmmmmm-4{
+     background-color: #FF5733;
+}
+.itemmmmmmm-5{
+     background-color: #FFC30F;
+}
+.itemmmmmmm-6{
+     background-color: #FFEEAD;
+}
+
+/*------------------------------------------ CONTAINER-8 --------------------------------------------------*/
+.container-8 {
+     background-color: lightgray;
+     display: grid;
+     width: 700px;
+     height: 400px;
+     grid-template-columns: repeat(3, 150px);
+     grid-template-rows: repeat(2, 150px);
+     grid-gap: 25px;
+     
+     /*Itemlar container’ın tamamını kaplamadığı zamanlarda onlarla alakalı bir hizalama yapmak istediğiniz zaman align-content ve justify-content propertylerini kullanabilirsiniz. */
+
+     align-content: space-around;    /*     end , center , space-around , space-between , space-evenly         satırda    */ 
+     /*justify-content: start;              end , center , space-around , space-between , space-evenly         sütunda    */
+
+
+}
+.itemmmmmmmm-1{
+     background-color: #581B45;
+}
+.itemmmmmmmm-2{
+     background-color: #900C3F;
+}
+.itemmmmmmmm-3{
+     background-color: #C70039;
+}
+.itemmmmmmmm-4{
+     background-color: #FF5733;
+}
+.itemmmmmmmm-5{
+     background-color: #FFC30F;
+}
+.itemmmmmmmm-6{
+     background-color: #FFEEAD;
+}

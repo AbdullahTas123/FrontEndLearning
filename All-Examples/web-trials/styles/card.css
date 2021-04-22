@@ -1,0 +1,76 @@
+body, html {
+  margin: 0;
+  height: 100vh;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  padding: 0 0.5em;
+}
+
+.card__content {
+  background-color: white;
+  padding: 1.5em 0.5em 1.5em 0.5em;
+}
+
+.card__img {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: aquamarine;
+}
+
+.card__img--div {
+  position: relative;
+  top: 1.4em;
+  border: 0.2em solid black;
+  padding: 1.5em 0;
+  margin: 0 1.5em;
+}
+
+.card__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.card__item {
+  /*(margin and)padding: top right bottom left */
+  padding: 3px;
+  border: 0.2em solid black;
+  font-size: medium;
+  color: #ad0909;
+}
+
+.card__item--active {
+  background-color: #d3cdcd;
+  font-weight: bold;
+}
+
+.card__link {
+  background: yellowgreen;
+  color: white;
+  text-decoration: none;
+  padding: .5em 1em;
+  border-radius: .5em;
+  display: inline-block;
+}
+
+.card__link:hover {
+  background: #e77474;
+  color: white;
+}
+/*# sourceMappingURL=card.css.map */

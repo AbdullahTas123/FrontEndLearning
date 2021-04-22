@@ -1,0 +1,41 @@
+.box-1 {
+     border: 1px solid #333333;
+     width: 200px;
+     height: 100px;
+}
+
+.word {
+     border: 1px solid #333333;
+     width: 100px;
+     font-size: 250%;
+}
+
+/* overflow: hidden   taşmayı saklıyor */
+.box-2 {
+     border: 1px solid #333333;
+     width: 200px;
+     height: 100px;
+     overflow: hidden;
+}
+
+/* overflow: scroll   taşmayı saklıyor ve scrolla aşşagı yukarı , sağa sola gidebiliriz*/
+.box-3 {
+     border: 1px solid #333333;
+     width: 200px;
+     height: 100px;
+     overflow: scroll;
+     /*x ve y için scroll*/
+}
+
+/* overflow: scroll   taşmayı saklıyor ve scrolla aşşagı yukarı gidebiliriz, sadece y ekseni*/
+.box-4 {
+     border: 1px solid #333333;
+     width: 200px;
+     height: 100px;
+     overflow-y: scroll;
+     /* overflow: scroll hidden;  x için scroll y için hidden */
+     /* overflow: auto;           eğer taşma varsa scroll gözükür */
+
+     /* word-break:normal, break-all, keep-all, break-word,  taşan kelime için
+        overflow-wrap: normal, break-word, anywhere    taşan kelime için */
+}

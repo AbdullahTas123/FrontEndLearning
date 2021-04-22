@@ -20,6 +20,13 @@ li em {
     color: rebeccapurple;
 }
 
+/* ol'de bulunan li'leri değiştiriyor ancak üst sınır ol olacak.  ol(li1,ul(li2)) ::> li1 blue olurken li2 olmaz çünkü li2 ul'nin içinde. */
+
+ol > li {
+    color: blue;
+}
+
+
 /*     h1'den sonraki p        */
 h1 + p {
     font-size: 200%;
@@ -50,4 +57,8 @@ body h1 + p .special {
     color: yellow;
     background-color: black;
     padding: 5px;
-  }
+}
+
+
+
+

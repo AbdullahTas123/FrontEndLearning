@@ -1,0 +1,29 @@
+html {
+     font-size: 16px;
+}
+
+p {
+     padding-top: 20%;
+     color:brown;
+
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 2.5rem;
+     font-style:italic;
+     font-weight: bold;
+
+     text-align: center;
+     text-transform: capitalize;
+     text-decoration: underline;
+     /* multiple shadow with comma(,) virgül ile */
+     text-shadow: 0.3rem 0.5rem 0.9rem rgb(182, 113, 113), 
+                  0.3rem 0.5rem 0.8rem red;
+
+     line-height: 1.6;
+     /* harfler arası ve kelimeler arası boşluk */
+     letter-spacing: 0.3rem;
+     word-spacing: 0.3rem;
+
+     overflow: hidden;
+  
+
+}

@@ -1,0 +1,108 @@
+/* -------- BACKGROUND and BORDER ---------*/
+
+.wrapper {
+  margin-left: 2em;
+  width: 1600px;
+  height: 900px;
+  background-color: lightpink;
+  display: grid;
+  grid-template-columns: repeat(4, 380px);
+  grid-template-rows: repeat(2, 300px);
+  grid-gap: 20px;
+  box-sizing: border-box;
+}
+
+.box {
+  font-size: 1.5em;
+
+}
+
+.a {
+  color: white;
+  background-image: url(../../web-examples-html/images/profile-photo.jpg);
+  background-color: lightgray;
+  background-size: 150px 100px;
+  background-repeat: no-repeat;
+}
+   
+.b {
+  color: white;
+  background-image: url(../../web-examples-html/images/firefox-icon.png);
+  background-color: lightgreen;
+  background-size: 20% 20%;
+}
+
+.c {
+  background-image: url(../../web-examples-html/images/profile-photo1.png);
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  background-color: lightskyblue;
+  background-position: top center;
+}
+
+.d {
+  background-image: url(../../web-examples-html/original-images/red-panda.jpg);
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  background-color: rgb(240, 121, 224);
+  /*toptan 20px aşşagı , sağdan 10px sola */
+  background-position: top 20px right 10px;
+  
+  /* x , y  =  soldan 20px sağa , yukardan 10px aşşagı */
+  /*background-position: 20px  10px */
+}
+
+.e {
+  background-image: linear-gradient(105deg, rgba(0,249,255,1) 39%, rgba(51,56,57,1) 96%);
+}
+
+.f {
+  background-image: radial-gradient(circle, rgba(0,249,255,1) 39%, rgba(51,56,57,1) 96%);
+  background-size: 100px 50px;
+  /*scroll: sayfa kaydırıldığında hareket etmez, kendi scroll edildiginde hareket etmez*/
+  /*fixed: sayfa kaydırıldığında hareket eder, kendi scroll edildiginde hareket etmez*/
+  /*local: sayfa kaydırıldığında hareket etmez , kendi scroll edildiginde hareket eder , yani local de */
+  background-attachment: fixed;
+}
+
+.g {
+  background-image: url(../../web-examples-html/images/firefox-icon.png), url(../../web-examples-html/images/profile-photo1.png); 
+
+  background-size: 150px 150px , 100px 100px;
+  background-repeat: no-repeat , repeat-x;
+  background-position: top right;
+}
+
+.h {
+  background:   
+  linear-gradient(105deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,1) 96%) center center / 400px 200px no-repeat, url(../../web-examples-html/images/firefox-icon.png) center no-repeat,rebeccapurple;
+}
+
+.i {
+  border: 4px solid black;
+  /* yukarının aynısı 
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+  */
+
+}
+
+.j {
+  border-top-width: 4px;
+  border-top-style:solid; /*dotted , dashed , double , ...*/
+  border-top-color: black;
+}
+
+.k {
+  border-top: 4px dotted rebeccapurple;
+  border-bottom: 1em double rgb(24, 163, 78);
+}
+
+.l {
+  border: 10px solid rebeccapurple;
+  border-radius: 1em;
+  border-top-right-radius: 10% 30%; /*horizontal 10% , vertical 30%  radius*/
+  background-color:rgba(0, 0, 0, 0.5); /* 0.5 şeffaflık , transparent . Azaldıkça şeffaflık artar  0.4 0.3 0.2 0.1 gibi*/
+}
+       

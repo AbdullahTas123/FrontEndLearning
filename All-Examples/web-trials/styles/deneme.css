@@ -1,0 +1,137 @@
+html {
+     margin: 0;
+     padding: 0;
+     background-color: rgb(39, 38, 38);
+ }
+ 
+ 
+ body {
+     width: 70%;
+     margin: 0 auto;
+ }
+ 
+ 
+ header.main-header {
+   color: white;
+   text-align: center;
+   font-size:4rem;
+   margin-top: 1%;
+   text-shadow: 1px 1px red;
+ }
+ 
+ 
+ 
+ nav {
+   background-color: #1c1c1d;
+   display: flex;
+   margin-bottom: 10px;
+ }
+ 
+ nav ul {
+   padding: 0;
+   list-style-type: none;
+   flex: 2;
+   display: flex;
+ }
+ 
+ nav li {
+   display: inline;
+   text-align: center;
+   flex: 1;
+ }
+ 
+ nav a {
+   display: inline-block;
+   font-size: 15px;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: white;
+ }
+ 
+ nav form {
+   flex: 1;
+   display: flex;
+   align-items: center;
+   height: 100%;
+   padding: 0 2em;
+ }
+ 
+ input {
+   font-size: 0.7rem;
+   height: 30px;
+   margin-top: 10px;
+   margin-left: 5px;
+ }
+ 
+ input[type="search"] {
+   flex: 3;
+ }
+ 
+ input[type="submit"] {
+   flex: 1;
+   margin-left: 1rem;
+   background: #333;
+   border: 0;
+   color: white;
+ }
+ 
+ /* || main layout */
+ 
+ main {
+   display: flex;
+   background-color: #1c1c1d;
+ }
+ 
+ aside {
+   flex: 1;
+   margin-left: 10px;
+ }
+ 
+ aside li {
+   padding-bottom: 10px;
+ }
+ 
+ aside li a {
+   color: white;
+ }
+ 
+ .main-page-container {
+   color: white;
+   flex: 4;
+ }
+ 
+ 
+ /*
+ nav ul {
+   position:fixed;
+   list-style-type: none;
+   margin: 0;
+   margin-top: 15px;
+   padding: 0;
+   overflow: hidden;
+   background-color: #111;
+ }
+   
+ nav.wrapper li {
+   float: left;
+ }
+   
+ nav.wrapper li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+   
+ */
+   /* Change the link color to #111 (black) on hover */
+ nav.wrapper li a:hover:not(.active) {
+   background-color: #333;
+ }
+ 
+ nav.wrapper li a.active{
+   background-color: rgb(92, 91, 91);
+ }
+ 
+ 
